@@ -239,7 +239,7 @@ function prompt(title, text, closeTime, close)
 		if typeof(closeTime) == "number" then
 			task.wait(closeTime)
 			local s = pcall(function()
-				T:Create(Prompt.Container, t, {Position = UDim2.new(1.15, 0, 0, 0)}):Play()
+				T:Create(Prompt.Container, t, {Position = UDim2.new(1.15, 0, 3, 0)}):Play()
 				wait(0.48)
 				Prompt:Destroy()
 			end)
